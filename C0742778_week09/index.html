@@ -6,7 +6,25 @@
     <link href="css/default.css" rel="stylesheet" />
 </head>
 <body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+    <script>
+        var calculator = {
+            sum: 0,
+            startnumber: 1109,
+            stopdownnumber: 11,
+            endnumber: 119,
+            addup: function () {
+                for (counter = this.startnumber; counter > this.endnumber; counter -= this.stepdownnumber) {
+                    this.sum += counter;
+                }
+
+
+                return this.sum;
+            }
+
+        };
+        document.write(calculator.addup());
+
+    </script>
+
 </body>
 </html>
